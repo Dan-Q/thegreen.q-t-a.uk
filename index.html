@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Green</title>
+  <meta name="description" content="The Green is the home of the Q-T-A family.">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#558255">
+  <link rel="icon" href="/icon-192x192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/icon-192x192.png" sizes="192x192" type="image/png">
+  <style type="text/css">
+    :root {
+      --step--1: clamp(1.25rem, 1.1134rem + 0.6829vw, 1.6rem);
+      --step-0: clamp(1.5rem, 1.3049rem + 0.9756vw, 2rem);
+      --step-1: clamp(1.8rem, 1.5268rem + 1.3659vw, 2.5rem);
+      --step-2: clamp(2.16rem, 1.7834rem + 1.8829vw, 3.125rem);
+      --step-3: clamp(2.5919rem, 2.0789rem + 2.5646vw, 3.9063rem);
+      --background: #558255;
+      --shadow: #385538;
+    }
+
+    @font-face {
+      font-display: optional;
+      font-family: 'EB Garamond';
+      font-style: normal;
+      font-weight: 400;
+      src: url('eb-garamond-v14-latin-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-display: optional;
+      font-family: 'EB Garamond';
+      font-style: normal;
+      font-weight: 700;
+      src: url('eb-garamond-v14-latin-700.woff2') format('woff2');
+    }
+
+    body {
+      background: var(--background);
+      color: white;
+      font-family: 'EB Garamond', 'Garamond', 'Times New Roman', serif;
+      font-size: var(--step-0);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 4rem;
+      max-width: 1140px;
+      min-width: 320px;
+    }
+
+    section {
+      border-bottom: 2px solid var(--shadow);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    h1 {
+      font-size: var(--step-3);
+      text-align: center;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: var(--step-2);
+      font-weight: normal;
+    }
+
+    h3, .h-adr {
+      font-size: var(--step-1);
+      font-weight: normal;
+    }
+
+    section, footer {
+      text-align: center;
+    }
+
+    footer, small, .links {
+      font-size: var(--step--1);
+    }
+
+    .h-card {
+      margin-top: 0;
+    }
+
+    .h-adr > *, .h-geo > * {
+      white-space: nowrap;
+    }
+
+    a, a:visited, a:hover {
+      color: white;
+      text-decoration: none;
+    }
+    a {
+      background-image: linear-gradient(0deg, var(--shadow) 50%, transparent 50%);
+      background-size: 100% 200%;
+      background-position-y: 8%;
+      transition: background-position-y 0.2s ease-in-out;
+      display: inline-block;
+      padding: 0 0.35rem;
+    }
+    a:hover {
+      background-position-y: 100%;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="h-card">
+      <img class="u-photo" src="family.svg" alt="" role="presentation" width="320" height="147">
+      <h1>
+        <a href="https://thegreen.q-t-a.uk/" class="p-name u-url">The Green</a>
+      </h1>
+      <p class="p-adr h-adr">
+        <span class="p-street-address">Eynsham Road</span>,
+        <span class="p-locality">Sutton</span>,
+        <span class="p-region">Witney</span>,
+        <span class="p-postal-code">OX29 5RZ</span>,
+        <span class="p-country-name">United Kingdom</span>
+      </p>
+      <p class="p-geo h-geo">
+        <data class="p-longitude" value="51.7573889">51° 45′ 26.6″ N</data>,
+        <data class="p-latitude" value="-1.4012429">001° 24′ 02.5″ W</data>,
+        <span>
+          <data class="p-altitude">114</data>m <abbr title="Above Sea Level">ASL</abbr>
+        </span>
+        <span>
+          (<abbr title="Ordnance Survey">OS</abbr> Grid Reference: SP4136006742)
+        </span>
+      </p>
+      <p class="p-note">
+        Home of the <a href="https://q-t-a.uk/">Q-T-A</a> family.
+      </p>
+      <img alt="Map showing The Green, slightly North and on the opposite side of the road of the junction where Sutton Lane in Sutton meets the B4449 (Eynsham Road). The Green sits between Nicholls Farm House and Deans Farm House, opposite Sutton Farmhouse." src="map.png" style="width:620px; border: 2px solid white; max-width: 100%;">
+    </section>
+
+    <section class="links">
+      Find us on:
+      <a href="https://www.bing.com/maps/?v=2&cp=51.757389~-1.400694&style=r&lvl=15&sp=Point.51.757389_-1.400694____">Bing</a> |
+      <a href="https://maps.google.com/maps?ll=51.757389,-1.400694&q=51.757389,-1.400694&hl=en&t=m&z=15">Google (9C3WQH4X+WPW)</a> |
+      <a href="https://www.openstreetmap.org/?mlat=51.757389&mlon=-1.400694&zoom=15&layers=M">OSM</a> |
+      <a href="https://geohack.toolforge.org/geohack.php?params=51_45_26.6_N_1_24_02.5_W_region:GB">GeoHack</a> |
+      <a href="https://what3words.com/socket.snooze.reclusive">W3W (socket.snooze.reclusive)</a>
+    </section>
+
+    <footer>
+      a <a href="https://things.danq.me/">Dan Q thing</a>
+    </footer>
+  </main>
+  <script type="text/javascript" defer>
+    if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');
+  </script>
+</body>
+</html>
